@@ -1,0 +1,17 @@
+
+let nombreADeviner = Math.floor(Math.random() * 10) + 1;
+let tentative = 0;
+let proposition;
+
+do {
+    proposition = parseInt(prompt("Devinez le nombre entre 1 et 10 :"));
+    tentative++;
+    
+    if (proposition < nombreADeviner) {
+        alert("Le nombre à deviner est plus grand !");
+    } else if (proposition > nombreADeviner) {
+        alert("Le nombre à deviner est plus petit !");
+    }
+} while (proposition !== nombreADeviner);
+
+alert(`Bravo ! Vous avez trouvé en ${tentative} tentatives.`);
