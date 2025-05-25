@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\hp\Desktop\min proret\min_projet_de_web\resources\views/modifier.blade.php ENDPATH**/ ?>

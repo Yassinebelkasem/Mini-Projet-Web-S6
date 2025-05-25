@@ -1,0 +1,26 @@
+ @extends('components.mastera')
+  @section('name')
+   
+     <div class="row">
+      
+ @foreach($voitures as $voiture)
+  <x-carda :voiture="$voiture" />
+ {{-- {{$voiture->marque}}
+ {{$voiture->modele}}
+ {{$voiture->version}}
+ {{$voiture->annee}}
+ {{$voiture->carburant}}
+ {{$voiture->transmission}}
+ {{$voiture->kilometrage}}
+ {{$voiture->moteur}}
+ {{$voiture->prix}}
+ {{$voiture->neuve}} 
+ {{$voiture->localisation}}
+ {{$voiture->description}}  --}}
+ 
+ @endforeach
+ {{$voitures->links()}} 
+</div>
+   
+   
+  @endsection
